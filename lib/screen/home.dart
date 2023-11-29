@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Image.network(user.picture.thumbnail),
               ),
               title: Text(user.fullName),
-              subtitle: Text(user.cell),
+              subtitle: Text(user.phone),
             );
           }),
     );
