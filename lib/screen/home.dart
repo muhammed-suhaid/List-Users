@@ -29,12 +29,12 @@ class _HomeScreenState extends State<HomeScreen> {
           itemBuilder: (context, index) {
             final user = users[index];
             return ListTile(
-              // leading: ClipRRect(
-              //   borderRadius: BorderRadius.circular(100),
-              //   child: Image.network(imageUrl),
-              // ),
+              leading: ClipRRect(
+                borderRadius: BorderRadius.circular(100),
+                child: Image.network(user.picture.thumbnail),
+              ),
               title: Text(user.fullName),
-              subtitle: Text(user.cell), 
+              subtitle: Text(user.cell),
             );
           }),
     );
